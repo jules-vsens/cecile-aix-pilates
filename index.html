@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cours de Pilates à Aix-en-Provence avec une kiné | Cécile Aix Pilates</title>
+<meta name="description" content="Cours de Pilates en petit groupe à Aix-en-Provence, par Cécile Magro, kinésithérapeute et danseuse. Débutant et intermédiaire, 10 personnes max, séance d'essai offerte.">
+<link rel="canonical" href="https://cecileaixpilates.fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cécile Aix Pilates — Pilates à Aix-en-Provence avec une kiné danseuse">
+<meta property="og:description" content="Petits groupes de 10 personnes max, matériel fourni, séance d'essai offerte. Le mardi à 9h, Aix-en-Provence.">
+<meta property="og:url" content="https://cecileaixpilates.fr/">
+<meta property="og:image" content="https://cecileaixpilates.fr/images/og.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#F2EBE4">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='32' fill='%23DDE3D5'/><path d='M14 44 C24 20 40 14 50 22' fill='none' stroke='%235F6B4E' stroke-width='4' stroke-linecap='round'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Cécile Aix Pilates",
+  "description": "Cours de Pilates en petit groupe à Aix-en-Provence par Cécile Magro, kinésithérapeute diplômée d'État et danseuse.",
+  "url": "https://cecileaixpilates.fr/",
+  "telephone": "+33666151513",
+  "image": "https://cecileaixpilates.fr/images/og.jpg",
+  "priceRange": "22 € - 180 €",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9 avenue des Infirmeries, Résidence Les Églantines",
+    "addressLocality": "Aix-en-Provence",
+    "postalCode": "13100",
+    "addressCountry": "FR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Tuesday",
+    "opens": "09:00",
+    "closes": "10:00"
+  }],
+  "sameAs": ["https://www.instagram.com/kinaixpilates/"],
+  "founder": {
+    "@type": "Person",
+    "name": "Cécile Magro",
+    "jobTitle": "Masseur-kinésithérapeute et professeure de Pilates"
+  },
+  "paymentAccepted": "Virement, Wero, Espèces, Chèque",
+  "currenciesAccepted": "EUR"
+}
+</script>
+
+<style>
+/* =========================================================
+   Design system Cécile Aix Pilates
+   Typo : Poppins en 3 graisses seulement (300 titres, 400 texte, 500 interface)
+          + Parisienne en accent script (quelques mots, jamais de paragraphe)
+   Composants inspirés de coss ui : bouton, carte, badge, accordéon
+   ========================================================= */
+:root{
+  /* Couleurs */
+  --sable:#F2EBE4;
+  --lin:#FAF6F2;
+  --surface:#FFFCF9;
+  --sauge-pale:#DDE3D5;
+  --sauge:#8A9474;
+  --sauge-fonce:#5F6B4E;
+  --poudre:#EACFC3;
+  --encre:#2F3129;
+  --encre-douce:#5B5D53;
+  --filet:#E2D8CE;
+
+  /* Typo */
+  --sans:"Poppins", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --script:"Parisienne", "Snell Roundhand", cursive;
+  --leger:300;
+  --normal:400;
+  --moyen:500;
+
+  --t-xs:.8125rem;
+  --t-sm:.9375rem;
+  --t-base:1rem;
+  --t-lg:1.125rem;
+  --t-xl:1.3125rem;
+  --t-h3:1.1875rem;
+  --t-h2:clamp(1.875rem, 3.8vw, 2.625rem);
+  --t-h1:clamp(2.25rem, 5.6vw, 3.875rem);
+
+  /* Rayons : imbriqué = parent - marge intérieure */
+  --r-sm:8px;
+  --r:12px;
+  --r-lg:20px;
+  --r-xl:28px;
+
+  /* Ombres légères */
+  --ombre-xs:0 1px 2px rgba(47,49,41,.06);
+  --ombre-sm:0 1px 2px rgba(47,49,41,.04), 0 4px 16px -6px rgba(47,49,41,.08);
+
+  /* Mise en page */
+  --mesure:38rem;
+  --page:72rem;
+  --gouttiere:clamp(1rem, 5vw, 3rem);
+  --tactile:2.75rem; /* 44px */
+
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 5.5rem);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--sable);color:var(--encre);
+  font-family:var(--sans);font-weight:var(--normal);font-size:var(--t-base);line-height:1.7;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-underline-offset:3px}
+strong{font-weight:var(--moyen)}
+:focus-visible{outline:2px solid var(--sauge-fonce);outline-offset:3px;border-radius:var(--r-sm)}
+
+h1,h2,h3{font-weight:var(--leger);line-height:1.15;margin:0;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:var(--t-h1);line-height:1.1}
+h2{font-size:var(--t-h2)}
+h3{font-size:var(--t-h3);font-weight:var(--moyen);letter-spacing:-.01em;line-height:1.35}
+p{margin:0 0 1em;max-width:var(--mesure);text-wrap:pretty}
+.muet{color:var(--encre-douce)}
+.chiffres{font-variant-numeric:tabular-nums}
+
+/* Accent script : court, grand, jamais pour du texte à lire */
+.script{font-family:var(--script);font-weight:400;letter-spacing:0;color:var(--sauge-fonce)}
+h1 .script{font-size:1.3em;line-height:.8;display:inline-block;padding-right:.1em}
+.accroche{font-family:var(--script);font-size:clamp(1.75rem,3vw,2.125rem);line-height:1;color:var(--sauge-fonce);margin:0 0 .5rem}
+
+.wrap{max-width:var(--page);margin:0 auto;padding:0 var(--gouttiere)}
+section{padding:clamp(4rem,9vw,6.5rem) 0}
+.entete-section{margin-bottom:clamp(2rem,4vw,3rem)}
+.entete-section h2{max-width:22ch}
+.entete-section p:not(.accroche){margin:1rem 0 0}
+
+/* ---------- Bouton (coss ui) ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:var(--tactile);padding:.625rem 1.25rem;border-radius:var(--r);
+  font:var(--moyen) var(--t-sm)/1.2 var(--sans);text-decoration:none;cursor:pointer;
+  border:1px solid transparent;text-align:center;
+  transition:background-color .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .1s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.97)}
+.btn-plein{background:var(--sauge-fonce);color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), 0 1px 2px rgba(47,49,41,.18)}
+.btn-plein:hover{background:#525D43}
+.btn-ligne{background:var(--surface);color:var(--encre);border-color:var(--filet);box-shadow:var(--ombre-xs)}
+.btn-ligne:hover{background:var(--lin);border-color:#D3C7BB}
+.btn-lg{min-height:3rem;padding:.75rem 1.5rem;font-size:var(--t-base)}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+
+/* ---------- Carte (coss ui) ---------- */
+.card{background:var(--surface);border:1px solid var(--filet);border-radius:var(--r-lg);box-shadow:var(--ombre-sm)}
+
+/* ---------- Badge (coss ui) ---------- */
+.badge{display:inline-flex;align-items:center;min-height:1.5rem;padding:.125rem .625rem;border-radius:999px;
+  background:var(--sauge-pale);color:var(--sauge-fonce);font-size:var(--t-xs);font-weight:var(--moyen);line-height:1.2;letter-spacing:0;white-space:nowrap}
+
+/* ---------- Places limitées ---------- */
+.dispo{display:inline-flex;align-items:center;gap:.5rem;min-height:2rem;padding:.25rem .875rem .25rem .75rem;margin-bottom:1.5rem;
+  border-radius:999px;background:var(--surface);border:1px solid var(--filet);box-shadow:var(--ombre-xs);
+  font-size:var(--t-xs);font-weight:var(--moyen);color:var(--encre);text-decoration:none;font-variant-numeric:tabular-nums}
+.dispo:hover{border-color:#D3C7BB}
+.point{position:relative;width:.5rem;height:.5rem;border-radius:50%;background:#B4533A;flex:none}
+.point::after{content:"";position:absolute;inset:0;border-radius:50%;background:#B4533A;animation:pulse 2s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.6}to{transform:scale(2.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.point::after{animation:none}}
+.limite{display:flex;gap:.75rem;align-items:flex-start;margin-top:1.5rem;padding:1rem 1.125rem;border-radius:var(--r);background:#F6E6DF}
+.limite .point{margin-top:.5rem}
+.limite p{margin:0;font-size:var(--t-sm);color:var(--encre-douce)}
+.limite strong{display:block;color:var(--encre)}
+.rarete{font-weight:var(--moyen)}
+
+/* ---------- En-tête ---------- */
+.entete{
+  position:sticky;top:0;z-index:10;
+  background:color-mix(in srgb, var(--sable) 88%, transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid color-mix(in srgb, var(--filet) 70%, transparent);
+  padding-top:env(safe-area-inset-top,0px);
+}
+.entete .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.5rem}
+.marque{display:flex;align-items:center;gap:.625rem;text-decoration:none;min-height:var(--tactile)}
+/* Emplacement logo : remplace le span .logo-ph par <img src="images/logo.svg" alt="" width="36" height="36"> */
+.logo-ph{width:36px;height:36px;border-radius:50%;border:1px dashed var(--sauge);display:grid;place-items:center;font-size:.6rem;color:var(--sauge-fonce)}
+.marque .nom{font-size:var(--t-lg);font-weight:var(--moyen);letter-spacing:-.01em}
+.nav{display:flex;gap:.25rem;font-size:var(--t-sm)}
+.nav a{display:inline-flex;align-items:center;min-height:var(--tactile);padding:0 .75rem;border-radius:var(--r-sm);text-decoration:none;color:var(--encre-douce);transition:background-color .15s, color .15s}
+.nav a:hover{color:var(--encre);background:color-mix(in srgb, var(--sauge-pale) 60%, transparent)}
+@media (max-width:860px){.nav{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(2.5rem,7vw,5rem) 0 clamp(4rem,9vw,6rem);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.hero h1{max-width:15ch}
+.hero .intro{font-size:var(--t-lg);color:var(--encre-douce);margin:1.5rem 0 2rem;max-width:32rem}
+.reperes{display:flex;flex-wrap:wrap;gap:.75rem 2rem;margin:2.5rem 0 0;padding:1.25rem 0 0;list-style:none;
+  font-size:var(--t-sm);color:var(--encre-douce);border-top:1px solid var(--filet)}
+.reperes li{display:flex;align-items:baseline;gap:.5rem}
+.reperes strong{font-size:var(--t-xl);color:var(--encre);font-variant-numeric:tabular-nums}
+.reperes sup{font-size:.55em;line-height:0;vertical-align:.7em}
+
+.visuel{position:relative}
+.arche{position:relative;margin:0;aspect-ratio:3/4;border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;background:var(--sauge-pale)}
+.ligne-danse{position:absolute;inset:-10% -20% auto -18%;width:138%;pointer-events:none;z-index:2}
+.ligne-danse path{fill:none;stroke:var(--sauge-fonce);stroke-width:1.4;stroke-linecap:round;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:trace 3.2s .3s cubic-bezier(.6,.05,.3,1) forwards}
+@keyframes trace{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){
+  .ligne-danse path{animation:none;stroke-dashoffset:0}
+  html{scroll-behavior:auto}
+  .btn:active{transform:none}
+}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr}
+  .arche{max-width:22rem;margin:0 auto;width:100%}
+}
+
+/* ---------- Emplacements photo ---------- */
+/* Pour mettre une vraie photo : remplace <div class="photo-ph">…</div> par
+   <img src="images/nom.jpg" alt="description" loading="lazy" style="width:100%;height:100%;object-fit:cover"> */
+.photo-ph{width:100%;height:100%;display:grid;place-items:center;text-align:center;padding:1.5rem;
+  color:var(--sauge-fonce);font-size:var(--t-sm);background:
+  repeating-linear-gradient(135deg, transparent 0 14px, rgba(95,107,78,.06) 14px 15px), var(--sauge-pale)}
+
+/* ---------- Deux métiers ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.duo .card{padding:clamp(1.5rem,3vw,2rem)}
+.duo h3{margin-bottom:.625rem}
+.duo p{color:var(--encre-douce);margin:0}
+.pastille{display:inline-grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:var(--r);
+  background:var(--sauge-pale);color:var(--sauge-fonce);margin-bottom:1.25rem}
+.pastille svg{width:1.25rem;height:1.25rem}
+.synthese{margin-top:1rem;padding:1.5rem clamp(1.5rem,3vw,2rem);background:var(--sauge-pale);border-radius:var(--r-lg)}
+.synthese p{margin:0;font-size:var(--t-lg);max-width:44rem}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
+/* ---------- Histoire ---------- */
+.histoire{background:var(--lin)}
+.histoire .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.portrait{margin:0;aspect-ratio:4/5;border-radius:var(--r-xl);overflow:hidden}
+.histoire h2{margin-bottom:1.5rem}
+.histoire .texte > p:not([class]){color:var(--encre-douce)}
+.histoire h2 + p{font-size:var(--t-lg);color:var(--encre) !important}
+.signature{font-family:var(--script);font-size:2.5rem;line-height:1;color:var(--sauge-fonce);margin:1.5rem 0 0}
+.formations{margin-top:2rem;padding:1.25rem 1.5rem;font-size:var(--t-sm);color:var(--encre-douce);border-radius:var(--r-lg)}
+.formations ul{margin:.5rem 0 0;padding-left:1.1rem}
+.formations li{margin-top:.25rem}
+@media (max-width:760px){.histoire .wrap{grid-template-columns:1fr}.portrait{max-width:22rem}}
+
+/* ---------- Étapes ---------- */
+.etapes ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;counter-reset:e}
+.etapes li{counter-increment:e;padding:1.5rem}
+.etapes li::before{content:counter(e);display:grid;place-items:center;width:2.5rem;height:2.5rem;margin-bottom:1.25rem;
+  border-radius:var(--r);background:var(--sauge-pale);color:var(--sauge-fonce);
+  font-weight:var(--moyen);font-size:var(--t-base);font-variant-numeric:tabular-nums}
+.etapes li h3{margin-bottom:.375rem}
+.etapes li p{color:var(--encre-douce);font-size:var(--t-sm);margin:0}
+@media (max-width:960px){.etapes ol{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.etapes ol{grid-template-columns:1fr}}
+
+/* ---------- Le cours ---------- */
+.cours{background:var(--sauge-pale)}
+.cours .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.cours .accroche{color:var(--sauge-fonce)}
+.faits{list-style:none;margin:2rem 0 0;padding:0}
+.faits li{display:flex;justify-content:space-between;gap:1rem;padding:.875rem 0;border-top:1px solid rgba(47,49,41,.12);font-size:var(--t-sm)}
+.faits li:last-child{border-bottom:1px solid rgba(47,49,41,.12)}
+.faits li span:first-child{color:var(--encre-douce)}
+.faits li span:last-child{text-align:right;font-weight:var(--moyen)}
+.creneau{padding:clamp(1.5rem,3vw,2rem)}
+.creneau .jour{font-size:clamp(2.25rem,5vw,3rem);line-height:1.05;font-weight:var(--leger);letter-spacing:-.02em;margin:.75rem 0 0}
+.creneau .detail{color:var(--encre-douce);margin:1rem 0 0;font-size:var(--t-sm)}
+.creneau hr{border:0;border-top:1px solid var(--filet);margin:1.5rem 0 0}
+.bientot{margin-top:1.25rem;font-size:var(--t-sm);color:var(--encre-douce)}
+@media (max-width:760px){.cours .wrap{grid-template-columns:1fr}}
+
+/* ---------- Tarifs ---------- */
+.essai{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem 2rem;
+  background:var(--poudre);border-radius:var(--r-lg);padding:clamp(1.5rem,3vw,2rem);margin-bottom:1rem}
+.essai p{margin:0}
+.essai .titre{font-size:var(--t-xl);font-weight:var(--moyen);letter-spacing:-.01em;line-height:1.3;margin-bottom:.25rem}
+.essai .muet{color:#5A4F48}
+.formules{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:1rem;align-items:stretch}
+.formule{display:flex;flex-direction:column;padding:clamp(1.5rem,3vw,2rem)}
+.formule h3{font-size:var(--t-xl)}
+.formule .pour{color:var(--encre-douce);font-size:var(--t-sm);margin:.25rem 0 1.5rem}
+.formule .montant{margin:0;font-size:clamp(2.25rem,4vw,2.75rem);font-weight:var(--leger);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.formule .montant span{font-size:var(--t-base);font-weight:var(--normal);letter-spacing:0;color:var(--encre-douce)}
+.formule .par-seance{margin:.5rem 0 0;font-size:var(--t-sm);font-weight:var(--moyen);font-variant-numeric:tabular-nums}
+.formule .economie{margin:.75rem 0 0;align-self:flex-start}
+.formule ul{list-style:none;margin:1.5rem 0 0;padding:1.25rem 0 0;border-top:1px solid var(--filet);font-size:var(--t-sm);color:var(--encre-douce)}
+.formule li{display:flex;gap:.625rem;align-items:flex-start}
+.formule li + li{margin-top:.5rem}
+.formule li::before{content:"";flex:none;width:1rem;height:1rem;margin-top:.25rem;background:var(--sauge-fonce);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat}
+.vedette{position:relative;border:2px solid var(--sauge);box-shadow:0 1px 2px rgba(47,49,41,.05), 0 12px 32px -12px rgba(95,107,78,.35)}
+.vedette > .badge:first-child{position:absolute;top:0;left:50%;transform:translate(-50%,-50%);background:var(--sauge-fonce);color:#fff;min-height:1.75rem;padding:.25rem .875rem}
+.vedette h3{margin-top:.5rem}
+.badge-poudre{background:var(--poudre);color:#5A4F48}
+.essai{margin-bottom:2.25rem}
+.mention-prix{margin:1.75rem 0 0;font-size:var(--t-xs);color:var(--encre-douce);max-width:none}
+@media (min-width:861px){.vedette{margin:-.75rem 0}}
+@media (max-width:860px){
+  .formules{grid-template-columns:1fr;gap:1.5rem;max-width:30rem}
+  .vedette{order:-1;margin-top:.75rem}
+}
+.infos-tarifs{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.infos-tarifs p{margin:0;padding:1.25rem 1.5rem;font-size:var(--t-sm);color:var(--encre-douce);background:var(--lin);border-radius:var(--r-lg);max-width:none}
+.infos-tarifs strong{color:var(--encre)}
+@media (max-width:760px){.infos-tarifs{grid-template-columns:1fr}}
+
+/* ---------- Accordéon (coss ui) ---------- */
+.accordeon{padding:0 clamp(1.25rem,3vw,1.75rem)}
+.accordeon details + details{border-top:1px solid var(--filet)}
+details summary{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  min-height:3.5rem;padding:1rem 0;cursor:pointer;list-style:none;font-weight:var(--moyen);font-size:var(--t-base);line-height:1.45;
+  -webkit-tap-highlight-color:transparent;
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"";flex:none;width:1.125rem;height:1.125rem;background:currentColor;opacity:.6;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center/contain no-repeat;
+  transition:transform .2s ease}
+details[open] summary::after{transform:rotate(180deg)}
+details summary:hover{color:var(--sauge-fonce)}
+details .contenu{padding:0 0 1.25rem;color:var(--encre-douce);font-size:var(--t-sm)}
+details .contenu p{margin:0}
+details .contenu ul{margin:0;padding-left:1.1rem}
+details .contenu li{margin-bottom:.4rem}
+.conditions{margin-top:1rem}
+@media (prefers-reduced-motion:reduce){details summary::after{transition:none}}
+
+/* ---------- Accès ---------- */
+.acces{background:var(--lin)}
+.acces .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.adresse{font-size:var(--t-lg);line-height:1.6;margin:1.5rem 0}
+.venir dl{margin:1rem 0 0}
+.venir dt{font-weight:var(--moyen);margin-top:1.25rem}
+.venir dd{margin:.125rem 0 0;color:var(--encre-douce);font-size:var(--t-sm)}
+.carte{margin:0;aspect-ratio:4/3;border-radius:var(--r-xl);overflow:hidden}
+@media (max-width:760px){.acces .wrap{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq .wrap{max-width:52rem}
+
+/* ---------- Réserver ---------- */
+.reserver{background:var(--sauge-fonce);color:var(--lin)}
+.reserver .accroche{color:var(--poudre)}
+.reserver h2{color:var(--lin);max-width:18ch}
+.reserver p{color:rgba(250,246,242,.88);font-size:var(--t-lg);margin:1.25rem 0 2rem}
+.reserver .btn-plein{background:var(--lin);color:var(--encre);box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.reserver .btn-plein:hover{background:#fff}
+.reserver .btn-ligne{background:transparent;border-color:rgba(250,246,242,.45);color:var(--lin);box-shadow:none}
+.reserver .btn-ligne:hover{background:rgba(250,246,242,.1);border-color:var(--lin)}
+.reserver .tel{margin:1.5rem 0 0;font-size:var(--t-sm)}
+.reserver .tel a{color:var(--lin);font-weight:var(--moyen);font-variant-numeric:tabular-nums}
+
+/* ---------- Pied ---------- */
+.pied{padding:2rem 0 2.5rem;font-size:var(--t-sm);color:var(--encre-douce)}
+.pied .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem 1rem}
+.pied a{color:var(--encre-douce);display:inline-flex;align-items:center;min-height:var(--tactile)}
+.pied a:hover{color:var(--encre)}
+.pied nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+
+/* Barre de réservation fixe sur mobile */
+.barre-mobile{display:none}
+@media (max-width:760px){
+  .entete .btn{display:none}
+  .barre-mobile{display:block;position:fixed;left:0;right:0;bottom:0;z-index:20;
+    padding:.75rem var(--gouttiere) calc(.75rem + env(safe-area-inset-bottom,0px));
+    background:color-mix(in srgb, var(--sable) 92%, transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-top:1px solid var(--filet)}
+  .barre-mobile .btn{width:100%;min-height:3rem}
+  .barre-places{display:flex;align-items:center;justify-content:center;gap:.5rem;margin:0 auto .5rem;font-size:var(--t-xs);font-weight:var(--moyen)}
+  .pied{padding-bottom:8rem}
+  .pied{padding-bottom:6.5rem}
+}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="wrap">
+    <a class="marque" href="#top" aria-label="Cécile Aix Pilates, accueil">
+      <span class="logo-ph" aria-hidden="true">logo</span>
+      <span class="nom">Cécile Aix Pilates</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#methode">La méthode</a>
+      <a href="#cecile">Cécile</a>
+      <a href="#cours">Le cours</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#acces">Accès</a>
+    </nav>
+    <a class="btn btn-plein" href="#reserver">Réserver</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <a class="dispo" href="#cours"><span class="point" aria-hidden="true"></span><span>Mardi 9h · Places limitées à 10</span></a>
+        <h1>Le Pilates, avec l'œil d'une kiné et la précision d'une <span class="script">danseuse</span></h1>
+        <p class="intro">Cours en petit groupe à Aix-en-Provence pour renforcer ton corps en profondeur, retrouver une posture juste et bouger avec plus de légèreté.</p>
+        <div class="actions">
+          <a class="btn btn-plein btn-lg" href="#reserver">Réserver ma séance offerte</a>
+          <a class="btn btn-ligne btn-lg" href="#tarifs">Voir les tarifs</a>
+        </div>
+        <ul class="reperes">
+          <li><strong>10</strong> personnes max</li>
+          <li><strong>20</strong> ans de danse</li>
+          <li><strong>1<sup>re</sup></strong> séance offerte</li>
+        </ul>
+      </div>
+      <div class="visuel">
+        <svg class="ligne-danse" viewBox="0 0 600 400" aria-hidden="true">
+          <path d="M10 330 C 90 300, 150 210, 230 200 S 330 260, 380 190 S 430 60, 520 70 S 600 140, 560 190 C 530 225, 470 200, 490 160"/>
+        </svg>
+        <figure class="arche">
+          <div class="photo-ph">Photo à venir<br>Cécile en mouvement, lumière douce</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEUX MÉTIERS -->
+  <section class="metiers" id="methode">
+    <div class="wrap">
+      <div class="entete-section">
+        <p class="accroche">la méthode</p>
+        <h2>Deux métiers du mouvement réunis dans un même cours</h2>
+      </div>
+      <div class="duo">
+        <div class="card">
+          <span class="pastille" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l3-7 4 14 3-7h7"/></svg></span>
+          <h3>Le regard de la kiné</h3>
+          <p>Diplômée d'État depuis 2020, Cécile connaît le corps de l'intérieur. Elle repère les compensations, adapte chaque exercice à tes éventuelles gênes et t'explique pourquoi tu fais ce que tu fais.</p>
+        </div>
+        <div class="card">
+          <span class="pastille" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-6 7-9 12-9 3 0 5 2 5 4s-2 3-4 2"/><circle cx="15" cy="4" r="1.5"/></svg></span>
+          <h3>L'exigence de la danseuse</h3>
+          <p>Vingt ans de danse classique, modern'jazz et bachata lui ont appris l'alignement, le contrôle et la fluidité. Elle te transmet ce sens du geste juste, sans jamais te demander d'être souple dès le premier cours.</p>
+        </div>
+      </div>
+      <div class="synthese">
+        <p>Résultat : un Pilates exigeant sur la qualité du mouvement, rassurant pour ton corps, et toujours adapté à ton niveau.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTOIRE -->
+  <section class="histoire" id="cecile">
+    <div class="wrap">
+      <figure class="portrait">
+        <div class="photo-ph">Photo à venir<br>Portrait de Cécile, visage visible</div>
+      </figure>
+      <div class="texte">
+        <p class="accroche">mon histoire</p>
+        <h2>Moi, c'est Cécile</h2>
+        <p>J'ai grandi dans les studios de danse. Le classique d'abord, puis le modern'jazz, et plus tard la bachata, que j'ai dansée en professionnelle. La danse m'a appris à écouter mon corps, et aussi ce qui arrive quand on lui en demande trop sans l'avoir préparé.</p>
+        <p>C'est ce qui m'a menée à la kinésithérapie. Au cabinet, je vois chaque jour des douleurs de dos, de nuque ou de genoux qui viennent souvent d'un corps pas assez gainé ou mal aligné.</p>
+        <p>Le Pilates est devenu mon pont entre ces deux mondes : une méthode douce et précise pour construire un corps plus fort, plus stable, et retrouver le plaisir de bouger. C'est ce que j'ai envie de partager avec toi.</p>
+        <p class="signature">Cécile Magro</p>
+        <div class="formations card">
+          Kinésithérapeute diplômée d'État (2020), danseuse depuis 20 ans.
+          <ul>
+            <li>Pilates Matwork 1 et 2 (Leaderfit)</li>
+            <li>Pilates avec petit matériel</li>
+            <li>Pilates et grossesse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPES -->
+  <section class="etapes">
+    <div class="wrap">
+      <div class="entete-section">
+        <p class="accroche">pas à pas</p>
+        <h2>Comment ça se passe</h2>
+      </div>
+      <ol>
+        <li class="card">
+          <h3>Tu m'écris</h3>
+          <p>Un message suffit pour réserver ta séance d'essai offerte.</p>
+        </li>
+        <li class="card">
+          <h3>Questionnaire santé</h3>
+          <p>Je te l'envoie avant ta venue pour connaître ton passé sportif, tes gênes et tes objectifs.</p>
+        </li>
+        <li class="card">
+          <h3>Petit bilan</h3>
+          <p>Avant ta première séance, on prend quelques minutes pour observer ta posture et ta mobilité.</p>
+        </li>
+        <li class="card">
+          <h3>Ta première séance</h3>
+          <p>Tu découvres le cours, et si tu te sens bien, tu choisis ensuite la formule qui te va.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- LE COURS -->
+  <section class="cours" id="cours">
+    <div class="wrap">
+      <div>
+        <p class="accroche">en pratique</p>
+        <h2>Le cours</h2>
+        <p class="muet" style="margin-top:1.25rem">Une heure de Pilates au sol pour travailler la sangle abdominale, le dos, la respiration et la stabilité. Les exercices sont expliqués et adaptés, que tu débutes ou que tu pratiques déjà.</p>
+        <ul class="faits">
+          <li><span>Niveau</span><span>Débutant et intermédiaire</span></li>
+          <li><span>Groupe</span><span>10 personnes maximum</span></li>
+          <li><span>Matériel</span><span>Tapis et petit matériel fournis</span></li>
+          <li><span>À apporter</span><span>Une serviette et ta gourde</span></li>
+          <li><span>Sur place</span><span>Vestiaires</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="creneau card">
+          <span class="badge">Chaque semaine</span>
+          <p class="jour chiffres">Mardi, 9h</p>
+          <p class="detail">Au studio de danse DAVP, 9 avenue des Infirmeries, Aix-en-Provence.</p>
+          <div class="limite">
+            <span class="point" aria-hidden="true"></span>
+            <p><strong>Places limitées à 10 personnes</strong>Un petit groupe pour que je puisse corriger chacun. Les places partent vite : réserve la tienne dès maintenant.</p>
+          </div>
+          <hr>
+          <p class="detail">D'autres créneaux arrivent bientôt. Écris-moi si un horaire t'arrangerait mieux, ça m'aide à les choisir.</p>
+        </div>
+        <p class="bientot">Bientôt aussi : des cours en entreprise et à domicile. Ça t'intéresse ? Parle-m'en.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section class="tarifs" id="tarifs">
+    <div class="wrap">
+      <div class="entete-section">
+        <p class="accroche">sans surprise</p>
+        <h2>Tarifs</h2>
+        <p class="muet">Des formules simples, sans frais d'inscription.</p>
+      </div>
+
+      <div class="essai">
+        <div>
+          <p class="titre">Ta première séance est offerte</p>
+          <p class="muet">Pour découvrir le cours et voir si la méthode te plaît, sans engagement. <span class="rarete">Places limitées : ne tarde pas à réserver la tienne.</span></p>
+        </div>
+        <a class="btn btn-plein" href="#reserver">Réserver ma séance offerte</a>
+      </div>
+
+      <div class="formules">
+        <article class="formule card">
+          <h3>À l'unité</h3>
+          <p class="pour">Pour venir de temps en temps</p>
+          <p class="montant">22 €</p>
+          <p class="par-seance">la séance</p>
+          <ul>
+            <li>Sans engagement</li>
+            <li>Tu réserves ta place par message</li>
+          </ul>
+        </article>
+
+        <article class="formule card vedette">
+          <span class="badge">Mon conseil pour progresser</span>
+          <h3>Abonnement</h3>
+          <p class="pour">Pour venir chaque semaine</p>
+          <p class="montant">70 € <span>/ mois</span></p>
+          <p class="par-seance">Environ 16 € la séance</p>
+          <span class="badge economie">Plus de 20 € d'économie par mois</span>
+          <ul>
+            <li>Tous tes mardis, ta place est gardée</li>
+            <li>Sans engagement : tu arrêtes quand tu veux, en me prévenant avant le 25</li>
+            <li>Pas de paiement en août, quand le cours est fermé</li>
+          </ul>
+        </article>
+
+        <article class="formule card">
+          <h3>Carte 10 séances</h3>
+          <p class="pour">Pour venir à ton rythme</p>
+          <p class="montant">180 €</p>
+          <p class="par-seance">Soit 18 € la séance</p>
+          <span class="badge badge-poudre economie">40 € d'économie</span>
+          <ul>
+            <li>Valable 12 mois</li>
+            <li>Idéal si tu ne peux pas venir chaque semaine</li>
+          </ul>
+        </article>
+      </div>
+      <p class="mention-prix">Prix TTC. TVA non applicable, article 293 B du CGI.</p>
+
+      <div class="infos-tarifs">
+        <p><strong>Parrainage : une séance offerte pour vous deux.</strong> Quand une personne que tu parraines prend une carte ou un abonnement, chacun de vous reçoit une séance offerte.</p>
+        <p><strong>Paiement.</strong> Virement ou Wero, espèces, chèque.</p>
+      </div>
+
+      <div class="conditions accordeon card">
+        <details>
+          <summary>Conditions de l'abonnement et de la carte</summary>
+          <div class="contenu">
+            <ul>
+              <li>L'abonnement comprend un cours par semaine, tous les mardis. Il est sans engagement : tu peux l'arrêter en me prévenant avant le 25 du mois pour le mois suivant.</li>
+              <li>Le cours est fermé en août et pendant les vacances de Noël. Tu ne paies pas l'abonnement en août.</li>
+              <li>Une séance d'abonnement manquée n'est pas remboursée. Si tu me préviens au moins 24 h avant, tu peux la rattraper dans les 2 mois, sur un autre créneau dès qu'il y en aura.</li>
+              <li>La carte 10 séances est nominative et valable 12 mois à partir de la date d'achat. Elle n'est pas remboursable ; en cas d'arrêt médical, sa validité est prolongée sur présentation d'un justificatif.</li>
+              <li>La séance d'essai offerte est valable une fois par personne.</li>
+              <li>Parrainage : la séance offerte est ajoutée à ta carte ou à ton abonnement, et à ceux de la personne parrainée, dès son premier achat.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Annulation et retards</summary>
+          <div class="contenu">
+            <ul>
+              <li>Avec la carte ou à l'unité, tu peux annuler gratuitement jusqu'à 24 h avant le cours : ta séance est recréditée.</li>
+              <li>Moins de 24 h avant, ou en cas d'absence, la séance est décomptée.</li>
+              <li>Merci d'arriver 5 minutes en avance. Au-delà de 10 minutes de retard, je ne peux plus t'accueillir pour des raisons de sécurité : l'échauffement fait partie du cours.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCÈS -->
+  <section class="acces" id="acces">
+    <div class="wrap">
+      <div class="venir">
+        <p class="accroche">au studio</p>
+        <h2>Où me trouver</h2>
+        <p class="adresse">Studio de danse DAVP<br>Résidence Les Églantines<br>9 avenue des Infirmeries<br>13100 Aix-en-Provence</p>
+        <a class="btn btn-ligne" href="https://www.google.com/maps/search/?api=1&query=9+avenue+des+Infirmeries+13100+Aix-en-Provence" target="_blank" rel="noopener">Ouvrir l'itinéraire</a>
+        <dl>
+          <dt>En voiture</dt>
+          <dd>Parking sur place.</dd>
+          <dt>En bus</dt>
+          <dd>Arrêts Val de l'Arc et Infirmeries, à quelques minutes à pied. Vérifie ta ligne sur aixenbus.fr.</dd>
+          <dt>En train</dt>
+          <dd>Gare d'Aix-en-Provence centre à environ 10 minutes à pied.</dd>
+        </dl>
+      </div>
+      <figure class="carte">
+        <div class="photo-ph">Photo à venir<br>Le studio ou l'entrée du bâtiment</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- AVIS : section volontairement masquée.
+       À réactiver uniquement avec de vrais avis d'élèves de Pilates (jamais d'avis de patients du cabinet).
+  <section class="avis">
+    <div class="wrap">
+      <h2>Elles ont testé</h2>
+      <blockquote>…</blockquote>
+    </div>
+  </section>
+  -->
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="entete-section">
+        <p class="accroche">bon à savoir</p>
+        <h2>Questions fréquentes</h2>
+      </div>
+      <div class="accordeon card">
+      <details>
+        <summary>Je n'ai jamais fait de Pilates, est-ce que je peux venir ?</summary>
+        <div class="contenu"><p>Oui. Le cours est pensé pour les débutants comme pour les intermédiaires. Chaque exercice a des variantes, et je t'accompagne dans les bons placements dès la première séance.</p></div>
+      </details>
+      <details>
+        <summary>Faut-il être souple ?</summary>
+        <div class="contenu"><p>Pas du tout. La souplesse se gagne avec la pratique. On travaille d'abord le contrôle, la respiration et le gainage.</p></div>
+      </details>
+      <details>
+        <summary>Le cours est-il un soin de kinésithérapie ?</summary>
+        <div class="contenu"><p>Non. Le cours de Pilates est une activité physique, pas un acte de kinésithérapie, et il n'est pas remboursé par l'Assurance maladie. Mon expérience de kiné me permet d'adapter les exercices, mais si tu as une douleur ou une pathologie, parles-en d'abord à ton médecin.</p></div>
+      </details>
+      <details>
+        <summary>Je suis enceinte, est-ce possible ?</summary>
+        <div class="contenu"><p>Je suis formée au Pilates pendant la grossesse. Préviens-moi dans le questionnaire santé et demande l'accord de ton médecin ou de ta sage-femme : j'adapterai les exercices pour toi.</p></div>
+      </details>
+      <details>
+        <summary>Au bout de combien de temps je vais sentir une différence ?</summary>
+        <div class="contenu"><p>Ça dépend de chacun, mais avec une séance par semaine, on sent souvent un meilleur gainage et une posture plus consciente au bout de quelques semaines. La régularité compte plus que l'intensité : c'est pour ça que je conseille l'abonnement.</p></div>
+      </details>
+      <details>
+        <summary>Et si je rate un mardi avec l'abonnement ?</summary>
+        <div class="contenu"><p>Préviens-moi au moins 24 h avant : tu pourras rattraper ta séance dans les 2 mois, sur un autre créneau dès qu'il y en aura. Et comme le cours est fermé en août, tu ne paies pas l'abonnement ce mois-là.</p></div>
+      </details>
+      <details>
+        <summary>Le cours est-il mixte ?</summary>
+        <div class="contenu"><p>Oui, le cours est ouvert à tout le monde. Le Pilates convient aussi bien aux femmes qu'aux hommes.</p></div>
+      </details>
+      <details>
+        <summary>Qu'est-ce que je dois apporter ?</summary>
+        <div class="contenu"><p>Seulement une serviette et ta gourde. Le tapis et le petit matériel sont fournis, et il y a des vestiaires. Viens dans une tenue confortable.</p></div>
+      </details>
+      <details>
+        <summary>Je peux utiliser ma carte sur plusieurs mois ?</summary>
+        <div class="contenu"><p>Oui, ta carte 10 séances est valable 12 mois à partir de la date d'achat.</p></div>
+      </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉSERVER -->
+  <section class="reserver" id="reserver">
+    <div class="wrap">
+      <p class="accroche">à très vite</p>
+      <h2>Réserve ta séance d'essai offerte</h2>
+      <p>Le groupe du mardi 9h est limité à 10 personnes : <strong>prends vite ta place.</strong> Envoie-moi un message : je te réponds pour confirmer ta place et je t'envoie le questionnaire santé.</p>
+      <div class="actions">
+        <a class="btn btn-plein btn-lg" href="https://wa.me/33666151513?text=Bonjour%20C%C3%A9cile%2C%20je%20souhaite%20r%C3%A9server%20ma%20s%C3%A9ance%20d%27essai%20offerte%20du%20mardi%209h." target="_blank" rel="noopener">M'écrire sur WhatsApp</a>
+        <a class="btn btn-ligne btn-lg" href="sms:+33666151513?&body=Bonjour%20C%C3%A9cile%2C%20je%20souhaite%20r%C3%A9server%20ma%20s%C3%A9ance%20d%27essai%20offerte%20du%20mardi%209h.">Envoyer un SMS</a>
+      </div>
+      <p class="tel">Ou appelle-moi au <a href="tel:+33666151513">06 66 15 15 13</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <span>Cécile Aix Pilates, Aix-en-Provence</span>
+    <nav aria-label="Liens de pied de page">
+      <a href="https://www.instagram.com/kinaixpilates/" target="_blank" rel="noopener">Instagram @kinaixpilates</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="barre-mobile">
+  <p class="barre-places"><span class="point" aria-hidden="true"></span><span>Places limitées le mardi 9h</span></p>
+  <a class="btn btn-plein" href="#reserver">Réserver ma séance offerte</a>
+</div>
+
+</body>
+</html>
