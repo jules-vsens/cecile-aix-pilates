@@ -201,11 +201,15 @@ section{padding:clamp(4rem,9vw,6.5rem) 0}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:center}
 .hero h1{max-width:15ch}
 .hero .intro{font-size:var(--t-lg);color:var(--encre-douce);margin:1.5rem 0 2rem;max-width:32rem}
-.reperes{display:flex;flex-wrap:wrap;gap:.75rem 2rem;margin:2.5rem 0 0;padding:1.25rem 0 0;list-style:none;
+.reperes{display:grid;grid-template-columns:repeat(2,auto);justify-content:start;gap:.75rem 2.5rem;margin:2.5rem 0 0;padding:1.25rem 0 0;list-style:none;
   font-size:var(--t-sm);color:var(--encre-douce);border-top:1px solid var(--filet)}
 .reperes li{display:flex;align-items:baseline;gap:.5rem}
 .reperes strong{font-size:var(--t-xl);color:var(--encre);font-variant-numeric:tabular-nums}
 .reperes sup{font-size:.55em;line-height:0;vertical-align:.7em}
+@media (max-width:520px){
+  .reperes{grid-template-columns:1fr 1fr;gap:1rem 1.5rem}
+  .reperes li{flex-direction:column;gap:0;line-height:1.4}
+}
 
 .visuel{position:relative}
 .arche{position:relative;margin:0;aspect-ratio:3/4;border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;background:var(--sauge-pale)}
@@ -423,6 +427,7 @@ details .contenu li{margin-bottom:.4rem}
           <li><strong>10</strong> personnes max</li>
           <li><strong>20</strong> ans de danse</li>
           <li><strong>1<sup>re</sup></strong> séance offerte</li>
+          <li><strong>5</strong> ans d'expérience de kiné</li>
         </ul>
       </div>
       <div class="visuel">
