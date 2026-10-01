@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://cecileaixpilates.fr/sitemap.xml
+Sitemap: https://aixperiencepilates.fr/sitemap.xml
